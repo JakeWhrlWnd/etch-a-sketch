@@ -24,15 +24,32 @@ function createGrid() {
 };
 
 blkBtn.addEventListener('click', function() {
-
+    grid.addEventListener('mouseover', function(e) {
+        e.target.style.backgroundColor = 'black';
+    })
 })
+
+function grayScale() {
+}
 
 gryBtn.addEventListener('click', function() {
+    grid.addEventListener('mouseover', function(e) {
+        e.target.style.backgroundColor = grayScale();
+    })
 
 })
 
+function randomColor() {
+    const randomR = Math.floor(Math.random() * 256);
+    const randomG = Math.floor(Math.random() * 256);
+    const randomB = Math.floor(Math.random() * 256);
+    return `rgb(${randomR}, ${randomG}, ${randomB})`;
+}
+
 rbwBtn.addEventListener('click', function() {
-    
+    grid.addEventListener('mouseover', function(e) {
+        e.target.style.backgroundColor = randomColor();
+    })    
 })
 
 resetBtn.addEventListener('click', function() {
