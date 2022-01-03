@@ -1,16 +1,10 @@
-// create grid
-// based on size of squares build grid
-
-// mouseover drawing effect 
-// change color 
-// reset grid
-// change grid size 
 
 const grid = document.querySelector('.grid-container');
 const resetBtn = document.querySelector('.reset');
 const blkBtn = document.querySelector('.black');
 const gryBtn = document.querySelector('.gray');
 const rbwBtn = document.querySelector('.rainbow');
+
 
 function createGrid() {
     for(let i = 0; i < 256; i++) {
@@ -30,6 +24,8 @@ blkBtn.addEventListener('click', function() {
 })
 
 function grayScale() {
+        return `rgb(0, 0, 0, 0.1)`;
+    }
 }
 
 gryBtn.addEventListener('click', function() {
