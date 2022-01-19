@@ -8,24 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main id="main-container" class="main-container">
-        <header id="header" class="header">
-            <h1 id="main-heading" class="main-heading">Etch-A-Sketch</h1>
-        </header>
-        <section id="sketch-container" class="sketch-container">
-            <div id="btn-container" class="btn-container">
-                <button id="rst-btn" class="btn reset">Reset</button>
-                <button id="blk-btn" class="btn black">Black</button>
-                <button id="gry-btn" class="btn gray">Grayscale</button>
-                <button id="rbw-btn" class="btn rainbow">Rainbow</button>
-            </div>
-            <div id="grid-container" class="grid-container">
-            </div>
-        </section>
-        <footer id="footer" class="footer">
-            <p>Created by James</p>
-        </footer>
-    </main>
+    <header id='header' class='header'>
+        <h1 id='title' class='title'>Etch-a-Sketch</h1>
+      </header>
+      
+      <main id='main' class='main'>
+        
+        <div id='controls' class='controls'>
+          <button id='reset-button' class='btn reset-button'>Reset</button>
+          <button id='black-button' class='btn black-button' data-color='black'>Black</button>
+          <button id='rainbow-button' class='btn rainbow-button' data-color='rainbow'>Rainbow</button>
+          <button id='shader-button' class='btn shader-button' data-color='shader'>Shader</button>
+        </div>
+        
+        <div id='grid-container' class='grid-container'>
+        </div>
+      
+      </main>
+      
+      <footer id='footer' class='footer'>
+        <p>Copyright &copy; 2022 James</p>
+      </footer>
     <script src="script.js"></script>
 </body>
 </html>
